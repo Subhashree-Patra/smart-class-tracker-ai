@@ -1,12 +1,12 @@
-
 import { User, Class, USERS_STORAGE_KEY, CLASSES_STORAGE_KEY } from './types';
 
 // Default data
 const defaultUsers: User[] = [
   { userId: "admin", name: "Administrator", password: "lol", role: "admin" },
   { userId: "teacher1", name: "John Doe", password: "lol", role: "teacher" },
-  { userId: "student1", name: "Alice Smith", password: "lol", role: "student" },
-  { userId: "student2", name: "Bob Johnson", password: "lol", role: "student" },
+  { userId: "anjali", name: "Anjali Rai", password: "lol", role: "student" },
+  { userId: "aryan", name: "Aryan Kumar", password: "lol", role: "student" },
+  { userId: "subhashree", name: "Subhashree Patra", password: "lol", role: "student" },
 ];
 
 const defaultClasses: Class[] = [
@@ -14,7 +14,7 @@ const defaultClasses: Class[] = [
     id: "class1",
     name: "Introduction to Computer Science",
     teacherId: "teacher1",
-    studentIds: ["student1", "student2"],
+    studentIds: ["anjali", "aryan" , "subhashree"],
     isActive: false,
     attendanceRecords: [],
   },
